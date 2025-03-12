@@ -1,0 +1,130 @@
+/* Container Styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Banner Styles */
+.banner {
+    background-color: white;
+    color: black;
+    padding: 15px 20px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Main Layout */
+.main {
+    display: flex;
+    flex-grow: 1;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    flex-shrink: 0;
+}
+.sidebar h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+}
+.sidebar-divider {
+    border-top: 1px solid #777;
+    margin: 10px 0;
+}
+
+/* Content Styles */
+.content {
+    flex-grow: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+.board-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Thread Controls */
+.thread-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.new-thread-btn {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.thread-filter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.thread-filter select {
+    padding: 6px;
+    border-radius: 4px;
+}
+
+/* Thread List */
+.thread-list {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.thread-header {
+    display: grid;
+    grid-template-columns: 3fr 1fr 0.5fr 1fr;
+    background-color: #f0f0f0;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+}
+.thread-item {
+    display: grid;
+    grid-template-columns: 3fr 1fr 0.5fr 1fr;
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+}
+.thread-item:hover {
+    background-color: #f9f9f9;
+}
+.thread-title-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+.thread-title-link:hover {
+    text-decoration: underline;
+}
+.thread-author, .thread-replies, .thread-date {
+    color: #555;
+}

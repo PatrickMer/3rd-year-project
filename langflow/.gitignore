@@ -1,0 +1,17 @@
+# Ignore virtual environments
+venv/
+.env/
+
+# Byte-compiled / cached files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ChromaDB persistence folder
+chroma_db/
+
+# Ignore personal environment settings
+.env
+
+

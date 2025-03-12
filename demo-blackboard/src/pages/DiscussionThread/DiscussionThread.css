@@ -1,0 +1,190 @@
+/* Container Styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Banner Styles */
+.banner {
+    background-color: white;
+    color: black;
+    padding: 15px 20px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Main Layout */
+.main {
+    display: flex;
+    flex-grow: 1;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    flex-shrink: 0;
+}
+.sidebar h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+}
+.sidebar-divider {
+    border-top: 1px solid #777;
+    margin: 10px 0;
+}
+
+/* Content Styles */
+.content {
+    flex-grow: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+.thread-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Post Styles */
+.post {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #e9ecef;
+    margin: 10px 0;
+    border-radius: 5px;
+    position: relative;
+}
+.post img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.post-content {
+    flex-grow: 1;
+}
+.post-content div {
+    font-weight: normal;
+}
+.post-input {
+    width: 90%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.post-time {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 15px;
+    color: #555;
+}
+
+/* Button Styles */
+.button-container {
+    margin-top: 10px;
+}
+.ask-button {
+    padding: 5px 10px;
+    border: none;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+/* Feedback Buttons Styles */
+.feedback-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.feedback-buttons button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.feedback-buttons button:hover {
+    transform: scale(1.2);
+}
+
+/* Action Buttons Styles */
+.action-buttons {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.action-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.action-button.red {
+    color: red;
+}
+
+.action-button.green {
+    color: green;
+}
+
+.action-button:hover {
+    transform: scale(1.2);
+}
+
+/* Verification Status Styles */
+.verification-status {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.verification-status.correct {
+    color: green;
+    font-weight: bold;
+}
+
+.verified-icon {
+    font-size: 20px;
+}
+
+.incorrect-answer {
+    color: red;
+    font-weight: bold;
+}
